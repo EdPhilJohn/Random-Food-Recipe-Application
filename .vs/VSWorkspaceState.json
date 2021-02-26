@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\components"
+    "\\components",
+    "\\pages"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\pages\\recipeapi.js",
   "PreviewInSolutionExplorer": false
 }
