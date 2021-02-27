@@ -5,7 +5,7 @@ export default function IPInfo({ data }) {
     data.proxy.proxy ? proxyOutput = proxyOutput + 'Proxy' : proxyOutput = proxyOutput + ' no Proxy'
     data.proxy.vpn ? proxyOutput =', VPN ' : proxyOutput = proxyOutput + ', no VPN '
     data.proxy.tor ? proxyOutput = 'and Tor.' : proxyOutput = proxyOutput + 'and no Tor.'
-    let imgsrc = "https://maps.googleapis.com/maps/api/staticmap?center=" + data.location.lat + ',' + data.location.lng + "&markers=color:red%7Clabel:C%7C40.718217,-73.998284&zoom=12&size=600x400&key=AIzaSyACYkbdEIoXXAehwaAazsEoHZ5tJF51YRQ"
+    let imgsrc = "https://maps.googleapis.com/maps/api/staticmap?center=" + data.location.lat + ',' + data.location.lng + "&markers=color:red%7Clabel:C%7C40.718217,-73.998284&zoom=12&size=600x400&key=API-KEY"
     let locSrc = "Latitude " + data.location.lat  + ",Longitude " + data.location.lng
     
     return (<div>
@@ -56,7 +56,7 @@ export default function IPInfo({ data }) {
         </div>)
 }
 export const getStaticProps = async() => {
-    const response =await fetch('https://geo.ipify.org/api/v1?apiKey=at_Zo7SuL7xlRng7iriGSnP4PhW3G2Hu')
+    const response =await fetch('https://geo.ipify.org/api/v1?apiKey=API_KEY')
     const data = await response.json()
     return {
         props: {

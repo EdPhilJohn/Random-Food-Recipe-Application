@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import CovidApi from './covidapi'
+import IPInfo from './ipinfo'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
